@@ -1,0 +1,15 @@
+***/*.pyc
+***/*.sqlite3
+***/venv/
+***/.idea/
+***/logs/
+***/_*/
+
+packages/*/
+.reports/
+
+.DS_Store
+.env
+
+*.cache
+*.egg-info

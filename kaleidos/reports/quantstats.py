@@ -5,8 +5,8 @@ from typing import Union
 
 import pandas as pd
 import quantstats as qs
-from cubyc.toolkit.research import Strategy
-from cubyc.toolkit.data import Frequency
+from cubyc.research import Strategy
+from cubyc.data import Frequency
 
 def quantstats_report(strategy: Strategy, value_history: pd.Series, benchmark: Union[str, pd.Series], title: str = None,
                       benchmark_title: str = None, output: str = 'html') -> None:
