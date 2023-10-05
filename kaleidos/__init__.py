@@ -1,1 +1,1 @@
-import reports
+from .reports import *
