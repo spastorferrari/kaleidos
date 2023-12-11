@@ -25,7 +25,7 @@ def matplotlib_report(plots: dict[str, pd.Series], title: str,
     """
 
     for plot_name, plot in plots.items():
-        profits = (plot - plot[0]) / plot[0] * 100
+        profits = (plot - plot.iloc[0]) / plot.iloc[0] * 100
         plt.plot(profits, label=f'{plot_name} - sharpe: {qs.stats.sharpe(plot):.2f}', zorder=1)
 
         marker_size = mpl.rcParams['lines.markersize']

@@ -11,5 +11,8 @@ setup(
     ],
     author='Esteban Safranchik',
     author_email='esteban@cubyc.com',
-    description='The official Cubyc developer API'
+    description='The official Cubyc developer API',
+    install_requires=[
+    'IPython'
+    ]
 )
